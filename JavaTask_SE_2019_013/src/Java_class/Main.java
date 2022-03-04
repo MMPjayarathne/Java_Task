@@ -6,22 +6,22 @@ import java.util.Scanner;
 
 public class Main {
     //function for summation
-    static double sum(double num1, double num2){
+    public static double sum(double num1, double num2){
         double sum = num1+num2;
         return sum;
     }
     //function for difference
-    static double difference(double num1,double num2){
+    public static double difference(double num1,double num2){
         double diff = num1-num2;
         return diff;
     }
     //function for multiplication
-    static double multiplication(double num1,double num2){
+    public static double multiplication(double num1,double num2){
         double multi = num1*num2;
         return multi;
     }
     //function for division
-    static double division(double num1,double num2){
+    public static double division(double num1,double num2){
         double divi = num1/num2;
         return  divi;
     }
@@ -29,7 +29,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double num1,num2,result;
+        double num1,num2,result=0;
         int operator;
 
         System.out.println("Hello!\n------------------------\nWhat do you want to do?");
@@ -54,7 +54,7 @@ public class Main {
                 result = division(num1, num2);
                 break;
             default:
-                result = 0;
+                System.out.println("Invalid Operator");
         }
         System.out.println("The answer is " + result);
 
